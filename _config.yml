@@ -26,6 +26,14 @@ exclude:
 # Syntax Highlighting
 highlighter: rouge
 
+# Kramdown configuration
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
 # Permalinks
 permalink: /:year/:month/:day/:title/
 
