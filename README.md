@@ -45,6 +45,15 @@ A modern, dark-themed Jekyll blog ready for GitHub Pages.
    ```
 3. Write your content in Markdown below the `---`.
 
+## 🖼️ How to Add Images
+
+1. Save your image in `assets/images/` (e.g., `my-pic.jpg`).
+2. In your post, add this Markdown:
+   ```markdown
+   ![Image Description](/assets/images/my-pic.jpg)
+   ```
+   *Note: Always start with `/` to make it absolute from the root.*
+
 ## 🎨 How to Customize
 
 - **Colors & Fonts**: Edit `_sass/_variables.scss`. this is the source of truth for the dark theme.
