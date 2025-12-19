@@ -8,3 +8,4 @@ excerpt: "A short blog post."
 ---
 ### Welcome
 We are approaching end of the year.
+![My Description](/assets/images/photo.jpg)
