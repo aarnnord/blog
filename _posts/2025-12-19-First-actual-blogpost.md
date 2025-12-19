@@ -11,11 +11,11 @@ We are approaching end of the year.
 
 ![My Description](/assets/images/photo.jpg)
 
-##Title 1
+## Title 1
 
-#Title 2
+# Title 2
 
-python ´´´
+python ```
 code code code
 for x in range(0,5):
   do something
