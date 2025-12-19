@@ -15,10 +15,10 @@ We are approaching end of the year.
 
 # Title 2
 
-python ```
+```python
 code code code
 for x in range(0,5):
   do something
-´´´
+```
 
-> "Quote"
+> "Quote!"
