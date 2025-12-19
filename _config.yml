@@ -1,0 +1,35 @@
+title: "DevChronicles"
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A modern, dark-themed blog for developers. Tech, code, and insights.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  username
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Syntax Highlighting
+highlighter: rouge
+
+# Permalinks
+permalink: /:year/:month/:day/:title/
+
+# Author
+author:
+  name: "Dev Author"
+  twitter: "devauthor"

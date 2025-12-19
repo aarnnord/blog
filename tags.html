@@ -1,0 +1,29 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+---
+
+<div class="tags-page">
+    <div class="tags-list" style="margin-bottom: 3rem;">
+        {% for tag in site.tags %}
+        <a href="#{{ tag | first }}" class="btn btn-outline" style="margin: 0.2rem;">{{ tag | first }} <span
+                style="font-size: 0.8em; opacity: 0.7;">({{ tag | last | size }})</span></a>
+        {% endfor %}
+    </div>
+
+    {% for tag in site.tags %}
+    <h2 id="{{ tag | first }}" style="margin-top: 3rem;">
+        #{{ tag | first }}
+    </h2>
+    <ul class="post-list">
+        {% for post in tag[1] %}
+        <li class="post-card" style="padding: 1rem; margin-bottom: 1rem;">
+            <small style="color: #94a3b8; display: block; margin-bottom: 0.5rem;">{{ post.date | date: "%B %-d, %Y"
+                }}</small>
+            <a href="{{ post.url | relative_url }}" style="font-size: 1.25rem; font-weight: bold;">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</div>

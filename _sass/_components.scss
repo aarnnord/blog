@@ -1,0 +1,142 @@
+// Components
+
+// Buttons
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    background-color: $primary;
+    color: $text-inverted;
+    font-weight: 600;
+    transition: $transition;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+
+    &:hover {
+        background-color: $primary-hover;
+        text-decoration: none;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba($primary, 0.3);
+    }
+
+    &.btn-outline {
+        background: transparent;
+        border: 1px solid $primary;
+        color: $primary;
+
+        &:hover {
+            background: rgba($primary, 0.1);
+        }
+    }
+}
+
+// Post List (Cards)
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-card {
+    background-color: $bg-surface;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: $transition;
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: $primary;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .post-meta {
+        font-size: 0.85rem;
+        color: $text-muted;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .post-title {
+        margin: 0.5rem 0 1rem;
+        font-size: 1.75rem;
+
+        a {
+            color: $text-main;
+
+            &:hover {
+                color: $primary;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .post-excerpt {
+        color: $text-muted;
+        margin-bottom: 1.5rem;
+    }
+}
+
+// Tags
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.tag-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background-color: rgba($secondary, 0.1);
+    color: $secondary;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: $transition;
+
+    &:hover {
+        background-color: $secondary;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+// Search
+.search-wrapper {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#search-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    background-color: $bg-surface;
+    color: $text-main;
+    font-size: 1.1rem;
+    transition: $transition;
+
+    &:focus {
+        outline: none;
+        border-color: $primary;
+        box-shadow: 0 0 0 3px rgba($primary, 0.2);
+    }
+}
+
+#search-results-container {
+    display: none; // Hidden by default
+    margin-top: 1rem;
+
+    &.has-results {
+        display: block;
+    }
+}
