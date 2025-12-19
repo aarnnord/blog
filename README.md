@@ -1,4 +1,4 @@
-# DevChronicles Blog Theme
+# Aarni's Blog & Portfolio
 
 A modern, dark-themed Jekyll blog ready for GitHub Pages.
 

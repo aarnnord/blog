@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Welcome to **DevChronicles**, a blog dedicated to the art of software engineering.
+Welcome to **{{ site.title }}**, a blog dedicated to the art of software engineering.
 
 ### Our Mission
 

@@ -7,7 +7,7 @@ tags: [welcome, jekyll]
 excerpt: "We are excited to launch our new blog aimed at developers."
 ---
 
-We are thrilled to launch **DevChronicles**, a space where we share our key learnings in software development.
+We are thrilled to launch **{{ site.title }}**, a space where we share our key learnings in software development.
 
 ### What to Expect
 
